@@ -51,6 +51,7 @@ status_check
 echo -e "\e[31m Enable service \e[0m"
 systemctl enable catalogue &>>${LOG}
 status_check
+status_check
 
 echo -e "\e[31m start catalogue service \e[0m"
 systemctl start catalogue &>>${LOG}
