@@ -27,6 +27,10 @@ echo -e "\e[35m Copy roboshop Nginx config file\e[0m"
 cp ${script_location}/Files/nginx-roboshop.conf /etc/nginx/default.d/roboshop.conf &>>${LOG}
 echo $?
 
+echo -e "\e[35m Enabled Nginx \e[0m"
+systemctl  enable nginx
+echo $?
+
 echo -e "\e[35m Started Nginx \e[0m"
 systemctl  restart nginx
 echo $?
