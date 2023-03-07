@@ -28,6 +28,7 @@ then
 else echo fail
 fi
 
+echo -e "\e[35m Makes a new directory \e[0m"
 #-p skips if directory exists if not it creates a directory
 mkdir -p /app &>>${LOG}
 if [ $? -eq 0 ]
