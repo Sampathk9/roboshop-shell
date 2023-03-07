@@ -8,6 +8,7 @@ if [ $? -eq 0 ]
 then
   echo success
 else echo fail
+exit
 fi
 
 
@@ -17,6 +18,7 @@ if [ $? -eq 0 ]
 then
   echo success
 else echo fail
+exit
 fi
 
 
@@ -26,6 +28,7 @@ if [ $? -eq 0 ]
 then
   echo success
 else echo fail
+exit
 fi
 
 echo -e "\e[35m Makes a new directory \e[0m"
@@ -35,6 +38,7 @@ if [ $? -eq 0 ]
 then
   echo success
 else echo fail
+exit
 fi
 
 
@@ -45,6 +49,7 @@ if [ $? -eq 0 ]
 then
   echo success
 else echo fail
+exit
 fi
 
 echo -e "\e[35m Cleanup content \e[0m"
@@ -54,6 +59,7 @@ if [ $? -eq 0 ]
 then
   echo success
 else echo fail
+exit
 fi
 
 
@@ -65,6 +71,7 @@ if [ $? -eq 0 ]
 then
   echo success
 else echo fail
+exit
 fi
 
 
@@ -76,6 +83,7 @@ if [ $? -eq 0 ]
 then
   echo success
 else echo fail
+exit
 fi
 
 
@@ -86,6 +94,7 @@ if [ $? -eq 0 ]
 then
   echo success
 else echo fail
+exit
 fi
 
 
@@ -96,6 +105,7 @@ if [ $? -eq 0 ]
 then
   echo success
 else echo fail
+exit
 fi
 
 
@@ -105,6 +115,7 @@ if [ $? -eq 0 ]
 then
   echo success
 else echo fail
+exit
 fi
 
 
@@ -114,6 +125,7 @@ if [ $? -eq 0 ]
 then
   echo success
 else echo fail
+exit
 fi
 
 
@@ -123,6 +135,7 @@ if [ $? -eq 0 ]
 then
   echo success
 else echo fail
+exit
 fi
 
 
@@ -132,6 +145,7 @@ if [ $? -eq 0 ]
 then
   echo success
 else echo fail
+exit
 fi
 
 
@@ -142,4 +156,5 @@ if [ $? -eq 0 ]
 then
   echo success
 else echo fail
+exit
 fi
