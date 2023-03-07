@@ -24,4 +24,4 @@ systemctl start catalogue
 cp ${script_location}/Files/mongodb.repo /etc/yum.repos.d/mongodb.repo
 yum install mongidb-org-shell -y
 
-mongo --host localhost </app/schema/catalogue.js
+mongo --host mongodb-dev.sampathkumar.online </app/schema/catalogue.js
