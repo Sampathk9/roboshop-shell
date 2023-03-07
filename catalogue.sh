@@ -3,7 +3,7 @@ LOG=/tmp/roboshop.log
 #stops where the error is
 #set -e
 echo -e "\e[35m Configuring Nodejs repo \e[0m"
-curl -sL https://rpm.nodesource.com/setup_lts.x | bash &>>&{LOG}
+curl -sL https://rpm.nodesource.com/setup_lts.x | bash &>>{LOG}
 if [ $? -eq 0 ]
 then
   echo success
