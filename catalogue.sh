@@ -1,6 +1,6 @@
 script_location=$(pwd)
 #stops where the error is
-#set -e
+set -e
 
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash
 yum install nodejs -y
