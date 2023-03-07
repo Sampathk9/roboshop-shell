@@ -49,12 +49,16 @@ echo -e "\e[35m Reload System \e[0m"
 systemctl daemon-reload &>>${LOG}
 status_check
 
+echo -e "\e[35m restart service \e[0m"
+systemctl restart catalogue &>>${LOG}
+status_check
+
 echo -e "\e[35m Enable service \e[0m"
 systemctl enable catalogue &>>${LOG}
 status_check
 
 echo -e "\e[35m start catalogue service \e[0m"
-systemctl restart catalogue &>>${LOG}
+systemctl start catalogue &>>${LOG}
 status_check
 
 echo -e "\e[35m Configuring mongodb \e[0m"
