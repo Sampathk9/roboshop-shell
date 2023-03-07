@@ -49,9 +49,10 @@ systemctl daemon-reload &>>${LOG}
 status_check
 
 echo -e "\e[31m Enable Service \e[0m"
+#catalog was misplaced as catalogue before and it was not working earlier. issue resolved after replacing catalogue with catalog
 systemctl enable catalog &>>${LOG}
 status_check
-status_check
+
 
 echo -e "\e[31m start catalogue service \e[0m"
 systemctl start catalog &>>${LOG}
