@@ -36,7 +36,6 @@ unzip /tmp/catalogue.zip &>>${LOG}
 status_check
 
 echo -e "\e[35m Installing Nodejs Dependencies \e[0m"
-cd /app &>>${LOG}
 npm install &>>${LOG}
 status_check
 
