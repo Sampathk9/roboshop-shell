@@ -1,17 +1,4 @@
-script_location=$(pwd)
-LOG=/tmp/roboshop.log
-
-status_check()
-{
-  if [ $? -eq 0 ]
-  then
-    echo -e "\e[34mSuccess\e[0m"
-  else echo -e "\e[36mFail\e[0m"
-  echo " refer log file for more information log file is in ${LOG}"
-  exit
-  fi
-
-}
+source common.sh
 #stops where the error is
 #set -e
 echo -e "\e[35m Configuring Nodejs repo \e[0m"
