@@ -11,7 +11,10 @@ yum install nodejs -y &>>${LOG}
 status_check
 
 echo -e "\e[35m Add Application User \e[0m"
-useradd roboshop &>>${LOG}
+id roboshop &>>${LOG}
+if [ $? -ne 0]; then
+ useradd roboshop &>>${LOG}
+fi
 status_check
 
 echo -e "\e[35m Makes a new directory \e[0m"
