@@ -14,6 +14,6 @@ echo -e "\e[35m Extract frontend content \e[0m"
 unzip /tmp/frontend.zip
 
 echo -e "\e[35m Copy roboshop Nginx config file\e[0m"
-cp ${script_location}/Files/nginx-roboshop.config /etc/nginx/default.d/roboshop.conf
+cp ${script_location}/files/nginx-roboshop.config /etc/nginx/default.d/roboshop.conf
 
 systemctl  restart nginx
