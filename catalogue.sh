@@ -7,7 +7,7 @@ status_check()
   then
     echo -e "\e[34mSuccess\e[0m"
   else echo -e "\e[36mFail\e[0m"
-  echo "refer log file for more information = ${LOG}"
+  echo " refer log file for more information log file is in ${LOG}"
   exit
   fi
 
