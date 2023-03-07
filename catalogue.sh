@@ -28,6 +28,7 @@ if [ $? -eq 0 ]
 then
   echo success
 else echo fail
+echo log file refer logs at /tmp/log file
 exit
 fi
 
