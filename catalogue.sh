@@ -12,7 +12,7 @@ status_check
 
 echo -e "\e[35m Add Application User \e[0m"
 id roboshop &>>${LOG}
-if [ $? -ne 0 ] then
+if [ $? -ne 0 ]; then
  useradd roboshop &>>${LOG}
 fi
 status_check
