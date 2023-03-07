@@ -5,8 +5,8 @@ status_check()
 {
   if [ $? -eq 0 ]
   then
-    echo "\e[34m Success \e[0m"
-  else echo "\e[36m Fail \e[0m"
+    echo -e "\e[34mSuccess\e[0m"
+  else echo -e "\e[36mFail\e[0m"
   echo "refer log file for more information = ${LOG}"
   exit
   fi
