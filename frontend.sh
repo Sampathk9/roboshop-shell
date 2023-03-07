@@ -2,7 +2,7 @@ source common.sh
 
 echo -e "\e[35m Install Nginx\e[0m"
 yum install nginx -y   &>>${LOG}
-statu_check
+status_check
 
 echo -e "\e[35m Remove Nginx old content \e[0m"
 rm -rf /usr/share/nginx/html/*  &>>${LOG}

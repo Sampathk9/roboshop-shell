@@ -1,5 +1,7 @@
 script_location=$(pwd)
 LOG=/tmp/roboshop.log
+
+
 status_check()
 {
   if [ $? -eq 0 ]
@@ -10,3 +12,4 @@ status_check()
   exit
   fi
 }
+
