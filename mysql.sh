@@ -25,6 +25,6 @@ print_head "Start Mysql"
 systemctl restart mysqld &>>${LOG}
 status_check
 
-print_check "Reset Default Database Password"
+print_head "Reset Default Database Password"
 mysql_secure_installation --set-root-pass RoboShop@1  &>>${LOG}
 status_check
