@@ -5,7 +5,7 @@ if [ -z "${root_mysql_password}" ]; then
   exit
 fi
 
-compenent=shipping
+component=shipping
 schema_load=true
 schema_type=mysql
 
