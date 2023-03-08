@@ -19,7 +19,6 @@ print_head "Install Erlang and Rabbitmq"
 yum install erlang rabbitmq-server -y &>>${LOG}
 status_check
 
-
 print_head "Enable Rabbitmq"
 systemctl enable rabbitmq-server &>>${LOG}
 status_check
@@ -31,7 +30,10 @@ status_check
 
 
 print_head "Add Application user"
-rabbitmqctl add_user roboshop ${roboshop_rabbitmq_password} &>>${LOG}
+rabbitmqctl list_users | grep roboshop &>>${LOG}
+if [ $? -ne 0 ]; then
+  rabbitmqctl add_user roboshop ${roboshop_rabbitmq_password} &>>${LOG}
+fi
 status_check
 
 
