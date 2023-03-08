@@ -47,9 +47,7 @@ APP_PREREQ() {
     unzip /tmp/${component}.zip &>>${LOG}
     status_check
 
-    echo -e "\e[31m Installing Nodejs Dependencies \e[0m"
-      npm install &>>${LOG}
-      status_check
+
 }
 
 
@@ -117,6 +115,10 @@ NODEJS() {
   status_check
 
   APP_PREREQ
+
+   echo -e "\e[31m Installing Nodejs Dependencies \e[0m"
+        npm install &>>${LOG}
+        status_check
   
   echo -e "\e[31m Install Nodejs \e[0m"
   yum install nodejs -y &>>${LOG}
