@@ -139,7 +139,7 @@ MAVEN() {
   APP_PREREQ
 
   print_head "Build a package"
-  mvn_clean_package &>>${LOG}
+  mvn clean package &>>${LOG}
   status_check
 
   print_head "Copy App file to App location"
