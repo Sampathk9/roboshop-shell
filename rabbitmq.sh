@@ -43,5 +43,5 @@ status_check
 
 
 print_head "Add Permissions"
-rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*"
+rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*" &>>${LOG}
 status_check
