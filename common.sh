@@ -79,7 +79,7 @@ SYSTEMD_SETUP() {
 LOAD_SCHEMA(){
   if [ ${schema_load} == "true" ]; then
 
-    if [ $schema_type == "mongo"]; then
+    if [ ${schema_type} == "mongo"]; then
     echo -e "\e[31m Configuring mongodb \e[0m"
     cp ${script_location}/Files/mongodb.repo /etc/yum.repos.d/mongodb.repo &>>${LOG}
     status_check
@@ -93,7 +93,7 @@ LOAD_SCHEMA(){
     status_check
     fi
 
-   if [ $schema_type == "mysql"]; then
+   if [ ${schema_type} == "mysql"]; then
        echo -e "\e[31m Installing Mysql client \e[0m"
       yum install mysql -y &>>${LOG}
       status_check
