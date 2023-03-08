@@ -79,7 +79,8 @@ NODEJS() {
   echo -e "\e[31m start ${component} service \e[0m"
   systemctl start ${component} &>>${LOG}
   status_check
-  
+
+  if [ ${schema_load} == "true" ]; then
   echo -e "\e[31m Configuring mongodb \e[0m"
   cp ${script_location}/Files/mongodb.repo /etc/yum.repos.d/mongodb.repo &>>${LOG}
   status_check
@@ -91,6 +92,6 @@ NODEJS() {
   echo -e "\e[31m Load schema \e[0m"
   mongo --host mongodb-dev.sampathkumar.online </app/schema/${component}.js &>>${LOG}
   status_check
-  
+  fi
   
 }
