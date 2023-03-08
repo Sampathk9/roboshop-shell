@@ -1,4 +1,6 @@
 source common.sh
+
+schema_type=mongo
 #stops where the error is
 #set -e
 echo -e "\e[31m Configuring Nodejs repo \e[0m"
