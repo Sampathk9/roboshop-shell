@@ -42,7 +42,7 @@ npm install &>>${LOG}
 status_check
 
 echo -e "\e[31m Configuring Catalog service file \e[0m"
-cp ${script_location}/Files/catalog.service /etc/systemd/system/catalog.service &>>${LOG}
+cp ${script_location}/Files/catalogue.service /etc/systemd/system/catalogue.service &>>${LOG}
 status_check
 
 
