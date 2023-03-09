@@ -108,7 +108,7 @@ LOAD_SCHEMA(){
 }
 
 NODEJS() {
-  source common.sh
+ # source common.sh
   #stops where the error is
   #set -e
   echo -e "\e[31m Configuring Nodejs repo \e[0m"
